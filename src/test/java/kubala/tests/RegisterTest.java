@@ -1,11 +1,12 @@
 package kubala.tests;
 
+import kubala.pages.HomePage;
 import org.testng.annotations.Test;
 
 public class RegisterTest extends BaseTest{
 
     @Test
     public void registerUserTest() {
-        System.out.println("mock");
+        new HomePage(driver).openMyAccountPage();
     }
 }
