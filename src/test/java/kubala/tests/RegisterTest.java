@@ -10,7 +10,8 @@ public class RegisterTest extends BaseTest {
     @Test
     public void registerUserTest() {
         int random = (int) (Math.random() * 1000);
-        WebElement dashboardLink = new HomePage(driver).openMyAccountPage()
+        WebElement dashboardLink = new HomePage(driver)
+                .openMyAccountPage()
                 .registerUserValidData("Kijaniatest" + random + "@test.pl", "test@test.pl")
                 .getDashboardLink();
 
@@ -19,7 +20,8 @@ public class RegisterTest extends BaseTest {
 
     @Test
     public void registerUserWithSameEmailTest() {
-        WebElement error = new HomePage(driver).openMyAccountPage()
+        WebElement error = new HomePage(driver)
+                .openMyAccountPage()
                 .registerUserInvalidData("Kijaniatest@test.pl", "test@test.pl")
                 .getError();
 

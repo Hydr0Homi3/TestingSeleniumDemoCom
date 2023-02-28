@@ -9,8 +9,8 @@ public class LogInTest extends BaseTest {
 
     @Test
     public void logInTest() {
-
-        WebElement dashboardLink = new HomePage(driver).openMyAccountPage()
+        WebElement dashboardLink = new HomePage(driver)
+                .openMyAccountPage()
                 .logInValidData("Kijaniatest@test.pl", "Kijaniatest@test.pl")
                 .getDashboardLink();
 
@@ -19,7 +19,8 @@ public class LogInTest extends BaseTest {
 
     @Test
     public void logInWithInvalidPasswordTest() {
-        WebElement error = new HomePage(driver).openMyAccountPage()
+        WebElement error = new HomePage(driver)
+                .openMyAccountPage()
                 .logInInvalidData("Kijaniatest@test.pl", "test@test.pl")
                 .getError();
 
