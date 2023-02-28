@@ -39,7 +39,7 @@ public class AddressDetailsPage {
     @FindBy(id = "order_comments")
     private WebElement orderCommentsInput;
 
-    @FindBy(xpath = "//button[@id='place_order']")
+    @FindBy(id = "place_order")
     private WebElement placeOrderButton;
     private WebDriver driver;
     public AddressDetailsPage(WebDriver driver) {
