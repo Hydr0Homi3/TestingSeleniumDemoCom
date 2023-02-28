@@ -2,16 +2,16 @@ package kubala.models;
 
 public class Customer {
 
-    private String firstName;
-    private String LastName;
-    private String companyName;
-    private String country;
-    private String street;
-    private String flatNumber;
-    private String zipCode;
-    private String city;
-    private String phone;
-    private String email;
+    private String firstName = "Jakub";
+    private String LastName = "Test";
+    private String companyName = "K&K";
+    private String country = "Poland";
+    private String street = "Kanonicza";
+    private String flatNumber = "2137";
+    private String zipCode = "21370";
+    private String city = "Krakow";
+    private String phone = "123456789";
+    private String email = "random123@gmail.com";
 
     public String getFirstName() {
         return firstName;
