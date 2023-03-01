@@ -10,6 +10,7 @@ public class RegisterTest extends BaseTest {
     @Test
     public void registerUserTest() {
         int random = (int) (Math.random() * 1000);
+
         WebElement dashboardLink = new HomePage(driver)
                 .openMyAccountPage()
                 .registerUserValidData("Kijaniatest" + random + "@test.pl", "test@test.pl")

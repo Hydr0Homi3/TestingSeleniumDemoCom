@@ -12,8 +12,7 @@ public class CheckoutTest extends BaseTest {
     public void checkoutTest() {
         Customer customer = new Customer();
 
-        OrderDetailsPage orderDetailsPage =
-                new HomePage(driver)
+        OrderDetailsPage orderDetailsPage = new HomePage(driver)
                 .openShopPage()
                 .openProduct("Java Selenium WebDriver")
                 .addProductToCart()
