@@ -11,6 +11,7 @@ public class CartPage {
     private WebElement proceedtoCheckoutButton;
 
     private WebDriver driver;
+
     public CartPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;

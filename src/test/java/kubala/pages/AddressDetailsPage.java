@@ -42,6 +42,7 @@ public class AddressDetailsPage {
     @FindBy(id = "place_order")
     private WebElement placeOrderButton;
     private WebDriver driver;
+
     public AddressDetailsPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
         this.driver = driver;
@@ -53,7 +54,7 @@ public class AddressDetailsPage {
         companyNameInput.sendKeys(customer.getCompanyName());
         Select countrySelect = new Select(billingCountrySelect);
         countrySelect.selectByVisibleText(customer.getCountry());
-        billingAddressInput.sendKeys(String.format("%s %s",customer.getStreet(), customer.getFlatNumber()));
+        billingAddressInput.sendKeys(String.format("%s %s", customer.getStreet(), customer.getFlatNumber()));
         billingPostcodeInput.sendKeys(customer.getZipCode());
         billingCityInput.sendKeys(customer.getCity());
         billingPhoneInput.sendKeys(customer.getPhone());
